@@ -11,10 +11,10 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String titulo;
+    private String title;
 
-    private LocalDateTime prazo;
-    private boolean completada;
+    private LocalDateTime deadline;
+    private boolean completed;
 
     public Long getId() {
         return id;
@@ -24,27 +24,27 @@ public class Task {
         this.id = id;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public LocalDateTime getPrazo() {
-        return prazo;
+    public LocalDateTime getDeadline() {
+        return deadline;
     }
 
-    public void setPrazo(LocalDateTime prazo) {
-        this.prazo = prazo;
+    public void setDeadline(LocalDateTime deadline) {
+        this.deadline = deadline;
     }
 
-    public boolean isCompletada() {
-        return completada;
+    public boolean isCompleted() {
+        return completed;
     }
 
-    public void setCompletada(boolean completada) {
-        this.completada = completada;
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }

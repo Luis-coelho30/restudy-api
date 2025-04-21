@@ -10,9 +10,9 @@ public class Subject {
     private Long id;
 
     @Column(unique = true)
-    private String nome;
+    private String name;
 
-    private String descricao;
+    private String description;
 
     public Long getId() {
         return id;
@@ -22,19 +22,19 @@ public class Subject {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
