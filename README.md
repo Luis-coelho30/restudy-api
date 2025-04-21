@@ -5,35 +5,27 @@ API Rest desenvolvida para simular uma aplicação direcionada à ajudar os estu
 
 ```mermaid
 classDiagram
-    class Usuario {
+    class User {
         +Long id
-        +String nome
+        +String name
         +String email
-<<<<<<< HEAD
-        +Set<Disciplina> subjects
-=======
-        +Set<Disciplina> disciplinas
-        +Set<Tarefa> tarefas
->>>>>>> 4fac58243418152b6e78f7da0bb075dd708f88dd
+        +Set<Subject> subjects
+        +Set<Task> tasks
     }
 
-    class Disciplina {
+    class Subject {
         +Long id
-        +String nome
-        +String descricao
-<<<<<<< HEAD
-        +Set<Tarefa> tasks
-=======
->>>>>>> 4fac58243418152b6e78f7da0bb075dd708f88dd
+        +String name
+        +String description
     }
 
-    class Tarefa {
+    class Task {
         +Long id
-        +String titulo
-        +LocalDateTime prazo
-        +boolean completada
+        +String title
+        +LocalDateTime deadline
+        +boolean completed
     }
 
-    Usuario --> Disciplina : has
-    Usuario --> Tarefa : has
+    User --> Subject : has
+    User --> Task : has
 ```
