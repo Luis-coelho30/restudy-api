@@ -1,5 +1,5 @@
 # restudy-api
-API Rest desenvolvida para simular uma aplicação direcionada à ajudar os estudantes a organizarem metas de estudo, tarefas e progresso
+API Rest desenvolvida para simular uma aplicação direcionada à ajudar os estudantes a organizarem metas de estudo, tasks e progresso
 
 ## Diagrama de Classes
 
@@ -9,14 +9,14 @@ classDiagram
         +Long id
         +String nome
         +String email
-        +Set<Disciplina> disciplinas
+        +Set<Disciplina> subjects
     }
 
     class Disciplina {
         +Long id
         +String nome
         +String descricao
-        +Set<Tarefa> tarefas
+        +Set<Tarefa> tasks
     }
 
     class Tarefa {

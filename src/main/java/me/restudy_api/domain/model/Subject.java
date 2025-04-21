@@ -1,13 +1,18 @@
 package me.restudy_api.domain.model;
 
-import java.util.Set;
+import jakarta.persistence.*;
 
-public class Disciplina {
+@Entity(name = "tb_disciplina")
+public class Subject {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(unique = true)
     private String nome;
+
     private String descricao;
-    private Set<Tarefa> tarefas;
 
     public Long getId() {
         return id;
@@ -31,13 +36,5 @@ public class Disciplina {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public Set<Tarefa> getTarefas() {
-        return tarefas;
-    }
-
-    public void setTarefas(Set<Tarefa> tarefas) {
-        this.tarefas = tarefas;
     }
 }

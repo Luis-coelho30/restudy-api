@@ -1,11 +1,18 @@
 package me.restudy_api.domain.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
-public class Tarefa {
+@Entity(name = "tb_tarefa")
+public class Task {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String titulo;
+
     private LocalDateTime prazo;
     private boolean completada;
 
