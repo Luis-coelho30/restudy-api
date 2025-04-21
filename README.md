@@ -9,14 +9,22 @@ classDiagram
         +Long id
         +String nome
         +String email
+<<<<<<< HEAD
         +Set<Disciplina> subjects
+=======
+        +Set<Disciplina> disciplinas
+        +Set<Tarefa> tarefas
+>>>>>>> 4fac58243418152b6e78f7da0bb075dd708f88dd
     }
 
     class Disciplina {
         +Long id
         +String nome
         +String descricao
+<<<<<<< HEAD
         +Set<Tarefa> tasks
+=======
+>>>>>>> 4fac58243418152b6e78f7da0bb075dd708f88dd
     }
 
     class Tarefa {
@@ -27,5 +35,5 @@ classDiagram
     }
 
     Usuario --> Disciplina : has
-    Disciplina --> Tarefa : has
+    Usuario --> Tarefa : has
 ```
