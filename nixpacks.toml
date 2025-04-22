@@ -1,0 +1,3 @@
+[build]
+builder = "maven"
+java_version = "21"
