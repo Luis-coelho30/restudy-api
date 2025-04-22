@@ -2,14 +2,13 @@ package me.restudy_api.domain.model;
 
 import jakarta.persistence.*;
 
-@Entity(name = "tb_disciplina")
+@Entity(name = "tb_subject")
 public class Subject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
     private String name;
 
     private String description;
